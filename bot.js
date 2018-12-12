@@ -171,5 +171,25 @@ client.on("message", async message => {
 // DONE BY MOORZ .
 // CODES - COPYRIGHT
 
+client.on('ready', function(){
+  client.user.setStatus("dnd");
+    var ms = 40000 ;	
+    var setGame = ['This bot by a7med','!help|Star BC'];	
+    var i = -1;	
+    var j = 0;	
+    setInterval(function (){	
+        if( i == -1 ){	
+j = 1;	
+       }	
+        if( i == (setGame.length)-1 ){	
+            j = -1;	
+      }	
+       i = i+j;	
+        client.user.setGame(setGame[i],`http://www.youtube.com/gg`);	
+}, ms);	
+	
+});
+
+
 
 client.login("NTIyNDE4Mjc0MzAyOTUxNDM1.DvKrgg.ee2c6mZhz4qHSRz5D-9-SmCYdiM");
