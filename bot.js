@@ -7,7 +7,7 @@ const prefix = "!";
 client.on("ready", async() => {
     client.user.setGame("Loading...");
 console.log(`Back Online In ${client.guilds.size} Servers!`);
-console.log(`https://discordapp.com/oauth2/authorize?client_id=${client.user.id}&scope=bot&permissions=8\nInvite Me To Your Server!`);
+console.log(`https://discordapp.com/api/oauth2/authorize?client_id=522418274302951435&permissions=8&scope=bot\nInvite Me To Your Server!`);
     setTimeout(() => {
         client.user.setActivity(`${prefix}help|By a7med `, {type: "WATCHING"});
     }, 3000);
@@ -16,13 +16,6 @@ console.log(`https://discordapp.com/oauth2/authorize?client_id=${client.user.id}
 // ========================================== [ BROADCAST COMMANDS ] ====================================
 
 
-/*
-السلام عليكم ورحمة الله وبركاته .
-هذا ملف بوت برودكاست بوت بالظبط ولكن فيه بعض التصليحات لمشاكل موجودة في البوت
--
-جميع الحقوق محفوظة لسيرفر كودز .
-CODES SERVER - MOORZ
-*/
 
 client.on("message", async message => {
     var command = message.content.split(" ")[0];
